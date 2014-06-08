@@ -77,20 +77,12 @@ public class MainActivity extends FragmentActivity {
 		private static final LatLng RECIFE = new LatLng(-8.0556, -34.8911);
 
 		
-		public PlaceholderFragment() {
-		}
-		
 		private void setUpMapIfNeeded() {
 			if (servicesConnected()) {
 				// Do a null check to confirm that we have not already instantiated
 				// the map.
 				if (mMap == null) {
 					FragmentManager fm = getChildFragmentManager();
-					SupportMapFragment fragmentMap = (SupportMapFragment) fm.findFragmentById(R.id.map);
-					if (fragmentMap != null) {
-						mMap = fragmentMap.getMap();
-							
-					} //else { ferrou!! :P }
 					
 					Fragment fragment = SupportMapFragment.newInstance();
 					 
@@ -176,7 +168,7 @@ public class MainActivity extends FragmentActivity {
 		public void onDestroyView() {
 			if (getActivity() != null) {
 				
-				FragmentManager fm = getChildFragmentManager();
+				FragmentManager fm = getActivity().getSupportFragmentManager();
 				if (fm != null) {
 					Fragment fragment = (fm.findFragmentById(R.id.map));
 					if (fragment != null) {
