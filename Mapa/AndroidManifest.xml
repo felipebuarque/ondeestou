@@ -49,7 +49,11 @@
         
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyB6I5xb8-FDlQ4BBadxTDYphp2O7fh3lOE" />
+            android:value="AIzaSyD59THCMWl7y6GaGCvG8lS5QbY1WlaAvdg"/> <!--  CHAVE JOSIAS -->
+            <!-- 
+            android:value="AIzaSyB6I5xb8-FDlQ4BBadxTDYphp2O7fh3lOE" /> CHAVE INICIAL WALLY
+             -->
+            
 
     </application>
 
